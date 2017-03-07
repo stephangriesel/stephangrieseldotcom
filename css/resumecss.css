@@ -1,0 +1,214 @@
+/* ######################################### */
+/* ##########stephangriesel.com############# */
+/* ######################################### */
+
+html {
+	min-width:300px;
+	font-family: 'Catamaran', sans-serif;
+	font-size:1em;
+}
+
+a:link {
+    color: #8c9966;
+}
+
+a:visited {
+    color: #8c9966;
+}
+
+a:hover {
+    color: #d9e2bc;
+}
+
+a:active {
+    color: #FFFFFF;
+}
+
+h1 {
+	font-size:2em;
+	font-family: 'Dosis', sans-serif;
+	padding-bottom:0.5em;
+}
+
+h2 {
+	padding:0.5em;
+}
+
+p {
+	font-family: 'Catamaran', sans-serif;
+}
+
+header, article, aside, footer { /* sections flexbox properties */
+	display: -webkit-flex; 
+	-webkit-justify-content:center; /* align content center */ 
+	-webkit-align-items:center;
+}
+
+header {
+	/* Flexbox Properties */
+	-webkit-flex: 0 0 auto;
+	-webkit-order:0;
+	-webkit-flex-flow:column;
+	/* Layout */
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 1em 1em 0 0;
+	color:#FFFFFF;
+	font-family: 'Titillium Web', sans-serif;
+	font-size:2em;
+}
+
+header h1 {
+	padding:0.2em;
+}
+
+/* Middle Div, aside & article sections */
+
+.middle > * { /* .middle > * to display containers below each other */
+	display:-webkit-flex;
+	/* min-height:500px;*/
+}
+
+article {
+	/* Flexbox Properties */
+	-webkit-flex: 2.5 0 0;
+	-webkit-flex-flow:column;
+	-webkit-order:1;
+	/* Layout */
+	background: rgba(200, 200, 200, 200);
+	padding:1em;
+	text-align:center;
+}
+
+/* Additional styles inside article element */
+.boldtext {
+	font-weight:bold;
+	font-size:1.2em;
+}
+
+.experience {
+	font-size:2em;
+}
+
+
+
+aside {
+	/* Flexbox Properties */
+	-webkit-flex:0 0 0;
+	-webkit-flex-flow: column;
+	-webkit-order:2;
+	/* Layout */
+	background: rgba(200, 200, 200, .6);
+	padding:1em;
+	text-align:center;
+}
+
+
+
+footer li {
+	display:inline;
+	/*Social Icons*/
+	padding:0.5em;
+}
+
+#about {
+	display:-webkit-flex;
+	-webkit-align-items:center;
+	-webkit-justify-content:center;
+}
+
+#about .halfleft {
+	/* layout */
+	float:left;
+	width:75%;
+}
+
+#about .halfright {
+	/* layout */
+	float:left;
+	width:25%;
+}
+
+footer {
+	/* Flexbox Properties */
+	-webkit-flex: 1 0 0;
+	-webkit-flex-flow:column;
+	-webkit-order:3;
+	/* Layout */
+	background: rgba(200, 200, 200, .4);
+	border-radius:0 0 2em 2em;
+	height:100px;
+}
+
+/* ######################################### */
+/* Media Queries Start */
+/* ######################################### */
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+
+/* Add height for header and footer */
+footer {
+	height:100px; 
+}
+
+header, article, aside, footer { 
+	display: -webkit-flex; 
+	-webkit-justify-content:center; /* align content center */ 
+	-webkit-align-items:center;
+}
+
+/* Middle Div, aside & article sections */
+
+.middle { /* .middle > * to display containers below each other */
+	display:-webkit-flex;
+	/* min-height:500px;*/
+}
+
+/* Sections Flexbox */
+
+header {
+	/* Flexbox Properties */
+	-webkit-flex: 1 0 auto;
+	-webkit-order:0;
+	/* Layout */
+	background: rgba(0, 0, 0, 0.5);
+}
+
+article {
+	/* Flexbox Properties */
+	-webkit-flex: 2.5 0 0;
+	-webkit-flex-flow:column;
+	-webkit-order:1;
+	/* Layout */
+	background: rgba(200, 200, 200, 200);
+	padding:1em;
+
+}
+
+/* Additional styles inside article element */
+.boldtext {
+	font-weight:bold;
+}
+
+aside {
+	/* Flexbox Properties */
+	-webkit-flex: 1 0 0;
+	-webkit-flex-flow: column;
+	-webkit-order:2;
+	/* Layout */
+	background: rgba(200, 200, 200, .6);
+	padding:1em;
+}
+
+footer {
+	/* Flexbox Properties */
+	-webkit-flex: 1 0 0;
+	-webkit-flex-flow:row;
+	-webkit-order:3;
+	/* Layout */
+	background: rgba(200, 200, 200, .4);
+}
+
+footer li {
+	display:inline;
+}
