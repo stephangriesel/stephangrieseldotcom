@@ -1,7 +1,10 @@
 /* Main Layout */
 
 html {
-	display:-webkit-flex;
+	display: -moz-box;			/* Firefox 19 */
+	display: -ms-flexbox;		/* IE 10 */
+	display: -webkit-flex;		/* Chrome */
+	display: flex;				/* Opera 12.1, Firefox 20+ */
 	-webkit-align-items:center;
 	-webkit-justify-content:center;
 	min-width:300px;
