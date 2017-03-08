@@ -20,7 +20,7 @@ a:visited {
 }
 
 a:hover {
-    color: #d9e2bc;
+    color: #FFFFFF;
 }
 
 a:active {
@@ -62,7 +62,7 @@ header {
 	-webkit-flex: 1 0 0;
 	-webkit-order:0;
 	/* Layout */
-	background: rgb(189, 196, 170);
+	background: rgb(102, 121, 153);
 	border-radius: 1em 1em 0 0;
 	font-family: 'Titillium Web', sans-serif;
 	font-size:2em;
@@ -74,7 +74,7 @@ article {
 	-webkit-flex-flow:column;
 	-webkit-order:1;
 	/* Layout */
-	background: rgb(140, 153, 102);
+	background: rgb(102, 121, 153);
 	padding:1em;
 	text-align:center;
 }
@@ -104,7 +104,7 @@ aside {
 	-webkit-flex-flow: column;
 	-webkit-order:2;
 	/* Layout */
-	background: rgb(189, 196, 170);
+	background: rgb(188, 193, 219);
 	padding:1em;
 	text-align:center;
 }
@@ -115,7 +115,7 @@ footer {
 	-webkit-flex-flow:column;
 	-webkit-order:3;
 	/* Layout */
-	background: rgb(189, 196, 170);
+	background: rgb(102, 121, 153);
 	border-radius:0 0 2em 2em;
 }
 
