@@ -56,7 +56,6 @@ header, article, aside, footer {
 
 .middle > * { 
 	display:-webkit-flex;
-	/* min-height:500px;*/
 }
 
 /* Sections Flexbox */
@@ -266,7 +265,6 @@ footer {
 	-webkit-flex: 1 0 0;
 	-webkit-flex-flow:row;
 	-webkit-order:3;
-	/* Layout */
 }
 
 footer li {
