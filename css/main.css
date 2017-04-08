@@ -149,6 +149,15 @@ footer li {
 	width:25%;
 }
 
+/* Contact Section */
+
+#contact {
+	display: flex;
+	font-family: 'Catamaran', sans-serif;
+	align-items:center;
+	justify-content:center;
+}
+
 /* Icon Left */
 
 #about2 {
