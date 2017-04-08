@@ -158,6 +158,10 @@ footer li {
 	justify-content:center;
 }
 
+#form {
+	padding:0.2em;
+}
+
 /* Icon Left */
 
 #about2 {
