@@ -1,11 +1,17 @@
 var http = require("http");
 var fs = require("fs");
+var formidable = require("formidable");
+var util = require("util");
 
 /* note on 'require' statement */
 /* require() is not part of your standard JavaScript. In context to your question and tags, require() is built into Node.js to load modules. The concept is similar to C/Java/Python/[insert more languages here] imports or includes.*/
 
 var server = http.createServer(function (req, res) {
-    displayForm(res);
+    if (req.method.toLowerCase() == "get") {
+        displayForm(res);
+    } else if (req.method.toLowerCase() == "post") {
+        processAllFieldsOfTheForm(req,res);
+    }
 });
 
 function displayForm(res) {
@@ -16,6 +22,23 @@ function displayForm(res) {
         });
         res.write(data);
         res.end();
+    });
+}
+
+function processAllFieldsOfTheForm(req,res) {
+    var form = new formidable.IncomingForm();
+
+    form.parse(req,function (err, fields, files) {
+        // Store the data from the fields in your data store
+        // The data store could be a file or database or any other store based on your application
+        res.writeHead(200, {
+            "content-type": "text/plain"
+        });
+        res.write("received the data:\n\n");
+        red.end(util.inspect({
+            fields: fields,
+            files: files
+        }));
     });
 }
 
