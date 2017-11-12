@@ -5,7 +5,7 @@
 
 body {
     background: #BBD2C5;  /* fallback for old browsers */
-    /* background: -webkit-linear-gradient(to right, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
+    /* background: -webkit-linear-gradient(to right, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 UPDATED */
     /* background: linear-gradient(to right, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color:#fff;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -84,7 +84,7 @@ body {
 /* ######################################### */
 
 /* Larger than tablet */
-@media (max-width: 815px) {
+@media (min-width: 815px) {
 
     * {
         margin: 0;
